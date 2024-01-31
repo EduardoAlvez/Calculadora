@@ -13,7 +13,7 @@ import br.com.cod3r.calculadora.modelo.MemoriaObservador;
 @SuppressWarnings("serial")
 public class Display extends JPanel implements MemoriaObservador {
 	
-	private final Label label;
+	private final Label JPanel;
 	
 	public Display() {
 //		ENTENDA: AQUI VC PEDE PRA SER NOTIFICADO QUANDO OUVER ALGUMA ALTERAÇÃO
@@ -23,7 +23,7 @@ public class Display extends JPanel implements MemoriaObservador {
 		label.setForeground(Color.BLACK);
 		label.setFont(new Font("Courier", Font.PLAIN,25));
 		
-		setLayout(new FlowLayout(FlowLayout.LEFT, 10,20));
+		setLayout(new FlowLayout(FlowLayout.RIGHT, 10,20));
 		add(label);
 		
 	}
